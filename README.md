@@ -37,6 +37,8 @@ This assumes that you have downloaded Vagrant (www.vagrantup.com), Oracle VM Vir
   $sudo service docker start #Starting Docker
 ```
 
+# Building your Docker image and starting Apache
+
   Build your first Docker container image
 ```
   $sudo docker build -t -i myimage/base . #This will create an image called myimage/base 

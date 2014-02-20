@@ -52,7 +52,7 @@ This assumes that you have downloaded Vagrant (www.vagrantup.com), Oracle VM Vir
 
  Change contents of Dockerfile to reflect installing http server
 ```
-  FROM custom/base
+  FROM myimage/base
   RUN yum -y install httpd
   ADD supervisord.conf /etc/supervisord.conf
   EXPOSE 22 80 

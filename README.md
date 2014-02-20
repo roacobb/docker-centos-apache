@@ -39,6 +39,14 @@ This assumes that you have downloaded Vagrant (www.vagrantup.com), Oracle VM Vir
 
 # Building your Docker image and starting Apache
 
+  Create Docker directory and add Dockerfile 
+```
+  $mkdir Docker
+  $cd Docker
+  $touch Dockerfile #place code from repo here
+  $cd ..
+```
+
   Build your first Docker container image
 ```
   $sudo docker build -t -i myimage/base . #This will create an image called myimage/base 

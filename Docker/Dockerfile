@@ -16,10 +16,3 @@ RUN yum -y install which
 
 RUN yum -y install git
 
-RUN yum -y install httpd
-
-ADD supervisord.conf /etc/supervisord.conf
-
-EXPOSE 22 80
-
-CMD ["/usr/bin/supervisord"]

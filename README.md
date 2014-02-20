@@ -45,6 +45,9 @@ This assumes that you have downloaded Vagrant (www.vagrantup.com), Oracle VM Vir
                                            in the current directory
 ```
 
+  Create a file called supervisord.conf in current directory  
+```
+  $touch supervisord.conf #
 
 
  

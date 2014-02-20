@@ -48,7 +48,7 @@ This assumes that you have downloaded Vagrant (www.vagrantup.com), Oracle VM Vir
 
   Build your first Docker container image while in Docker directory
 ```
-  $sudo docker build -t -i myimage/base . #This will create an image called myimage/base 
+  $sudo docker build -t myimage/base . #This will create an image called myimage/base 
                                            in the current directory
 ```
 

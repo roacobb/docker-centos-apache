@@ -69,7 +69,7 @@ This assumes that you have downloaded Vagrant (www.vagrantup.com), Oracle VM Vir
  $sudo docker run -p 80:80 -v /vagrant/htdocs:/var/www/html -t -i myimage/httpd
 ```
 
- Open a browser and test 
+# Open a browser and test 
 
  Go to http://localhost:8080 in your browser
 

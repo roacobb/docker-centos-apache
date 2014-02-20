@@ -5,9 +5,8 @@ This assumes that you have downloaded Vagrant (www.vagrantup.com), Oracle VM Vir
 
 # Starting your VM
 
-  Create Vagrant Directory 
+  Create Vagrant Directory and switch to that directory  
 ```
-	$mkdir ~/vagrant
-
-```
- 
+  $mkdir ~/vagrant
+  $cd ~/vagrant 
+``` 

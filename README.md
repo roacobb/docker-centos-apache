@@ -47,7 +47,30 @@ This assumes that you have downloaded Vagrant (www.vagrantup.com), Oracle VM Vir
 
   Create a file called supervisord.conf in current directory  
 ```
-  $touch supervisord.conf #
+  $touch supervisord.conf #Place contents of file in repo here
+```
 
+ Change contents of Dockerfile to reflect installing http server
+```
+  FROM custom/base
+  RUN yum -y install httpd
+  ADD supervisord.conf /etc/supervisord.conf
+  EXPOSE 22 80 
+  CMD ["/usr/bin/supervisord"]
+```
+
+ Build another Docker image to reflect http server layer
+```
+ $sudo docker build -t -i myimage/httpd . #This creates an image called myimage/httpd
+```
+
+ Run the http server 
+```
+ $sudo docker run -p 80:80 -v /vagrant/htdocs:/var/www/html -t -i myimage/httpd
+```
+
+ Open a browser and test 
+
+ Go to http://localhost:8080 in your browser
 
  

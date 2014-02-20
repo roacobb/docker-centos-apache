@@ -23,4 +23,26 @@ This assumes that you have downloaded Vagrant (www.vagrantup.com), Oracle VM Vir
   $touch index.html #place code from this repo here
 ```
 
+  Switch back to ~/vagrant and vagrant up after that ssh into your VM
+```
+  $cd ..
+  $vagrant up
+  $vagrant ssh
+```
+
+  Install Docker
+```
+  $sudo yum -y update #Update installed packages
+  $sudo yum -y install docker-io #Installing Docker
+  $sudo service docker start #Starting Docker
+```
+
+  Build your first Docker container image
+```
+  $sudo docker build -t -i myimage/base . #This will create an image called myimage/base 
+                                           in the current directory
+```
+
+
+
  
